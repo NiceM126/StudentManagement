@@ -8,13 +8,13 @@ void display_1();
 void display_2();
 void display_3();
 
-//¹ÜÀíÔ±Ïà¹Øº¯Êı
-void addStu()//½øÈëÌí¼ÓÑ§Éú
+//ç®¡ç†å‘˜ç›¸å…³å‡½æ•°
+void addStu()//è¿›å…¥æ·»åŠ å­¦ç”Ÿ
 {
-    Manage manage1;//ÊµÀı»¯¶ÔÏó
-    for (int temp = 1; temp;) { //Ñ­»·Ìí¼ÓÑ§Éú
-        manage1.addStu();//µ÷ÓÃManageÀàÖĞµÄaddStu£¨£©º¯Êı
-        cout << "ÊÇ·ñ¼ÌĞøÌí¼ÓÑ§Éú£¨Y(y)£ºÊÇ£¬N(n)£º·ñ£©" << endl; //ÅĞ¶ÏÊÇ·ñÑ­»·
+    Manage manage1;//å®ä¾‹åŒ–å¯¹è±¡
+    for (int temp = 1; temp;) { //å¾ªç¯æ·»åŠ å­¦ç”Ÿ
+        manage1.addStu();//è°ƒç”¨Manageç±»ä¸­çš„addStuï¼ˆï¼‰å‡½æ•°
+        cout << "æ˜¯å¦ç»§ç»­æ·»åŠ å­¦ç”Ÿï¼ˆY(y)ï¼šæ˜¯ï¼ŒN(n)ï¼šå¦ï¼‰" << endl; //åˆ¤æ–­æ˜¯å¦å¾ªç¯
         char a;
         cin >> a;
         if(a == 'Y' || a == 'y') {
@@ -22,18 +22,18 @@ void addStu()//½øÈëÌí¼ÓÑ§Éú
         } else if(a == 'N' || a == 'n') {
             temp = 0;
         } else {
-            cout << "ÊäÈë´íÎó!" << endl;
+            cout << "è¾“å…¥é”™è¯¯!" << endl;
             temp = 1;
         }
     }
 }
 
-void delStu()//½øÈëÉ¾³ıÑ§Éú
+void delStu()//è¿›å…¥åˆ é™¤å­¦ç”Ÿ
 {
-    Manage manage2;//ÊµÀı»¯¶ÔÏó
-    for (int temp = 1; temp;) { //Ñ­»·É¾³ıÑ§Éú
-        manage2.delStu();//µ÷ÓÃManageÀàÖĞµÄdelStu()º¯Êı
-        cout << "ÊÇ·ñ¼ÌĞøÉ¾³ıÑ§Éú£¨Y(y)£ºÊÇ£¬N(n)£º·ñ£©" << endl; //ÅĞ¶ÏÊÇ·ñÑ­»·
+    Manage manage2;//å®ä¾‹åŒ–å¯¹è±¡
+    for (int temp = 1; temp;) { //å¾ªç¯åˆ é™¤å­¦ç”Ÿ
+        manage2.delStu();//è°ƒç”¨Manageç±»ä¸­çš„delStu()å‡½æ•°
+        cout << "æ˜¯å¦ç»§ç»­åˆ é™¤å­¦ç”Ÿï¼ˆY(y)ï¼šæ˜¯ï¼ŒN(n)ï¼šå¦ï¼‰" << endl; //åˆ¤æ–­æ˜¯å¦å¾ªç¯
         char a;
         cin >> a;
         if(a == 'Y' || a == 'y') {
@@ -41,18 +41,18 @@ void delStu()//½øÈëÉ¾³ıÑ§Éú
         } else if(a == 'N' || a == 'n') {
             temp = 0;
         } else {
-            cout << "ÊäÈë´íÎó!" << endl;
+            cout << "è¾“å…¥é”™è¯¯!" << endl;
             temp = 1;
         }
     }
 }
 
-void modManInfo()//¹ÜÀíÔ±ĞŞ¸ÄĞÅÏ¢º¯Êı
+void modManInfo()//ç®¡ç†å‘˜ä¿®æ”¹ä¿¡æ¯å‡½æ•°
 {
-    Manage manage3;//ÊµÀı»¯¶ÔÏó
-    for (int temp = 1; temp;) { //Ñ­»·ĞŞ¸Ä
-        manage3.modManInfo();//µ÷ÓÃManageÀàÖĞµÄmodManInfo()º¯Êı
-        cout << "ÊÇ·ñ¼ÌĞøĞŞ¸Ä£¨Y(y)£ºÊÇ£¬N(n)£º·ñ£©" << endl; //Ñ­»·ÅĞ¶Ï
+    Manage manage3;//å®ä¾‹åŒ–å¯¹è±¡
+    for (int temp = 1; temp;) { //å¾ªç¯ä¿®æ”¹
+        manage3.modManInfo();//è°ƒç”¨Manageç±»ä¸­çš„modManInfo()å‡½æ•°
+        cout << "æ˜¯å¦ç»§ç»­ä¿®æ”¹ï¼ˆY(y)ï¼šæ˜¯ï¼ŒN(n)ï¼šå¦ï¼‰" << endl; //å¾ªç¯åˆ¤æ–­
         char a;
         cin >> a;
         if(a == 'Y' || a == 'y') {
@@ -60,18 +60,18 @@ void modManInfo()//¹ÜÀíÔ±ĞŞ¸ÄĞÅÏ¢º¯Êı
         } else if(a == 'N' || a == 'n') {
             temp = 0;
         } else {
-            cout << "ÊäÈë´íÎó!" << endl;
+            cout << "è¾“å…¥é”™è¯¯!" << endl;
             temp = 1;
         }
     }
 }
 
-void modStuScore()//¹ÜÀíÔ±ĞŞ¸ÄÑ§Éú³É¼¨º¯Êı
+void modStuScore()//ç®¡ç†å‘˜ä¿®æ”¹å­¦ç”Ÿæˆç»©å‡½æ•°
 {
-    Manage manage4;//ÊµÀı»¯¶ÔÏó
-    for (int temp = 1; temp;) { //Ñ­»·ĞŞ¸Ä
-        manage4.modStuScore();//µ÷ÓÃManageÀàÖĞµÄmodStuScore()º¯Êı
-        cout << "ÊÇ·ñ¼ÌĞøĞŞ¸Ä£¨Y(y)£ºÊÇ£¬N(n)£º·ñ£©" << endl; //Ñ­»·ÅĞ¶Ï
+    Manage manage4;//å®ä¾‹åŒ–å¯¹è±¡
+    for (int temp = 1; temp;) { //å¾ªç¯ä¿®æ”¹
+        manage4.modStuScore();//è°ƒç”¨Manageç±»ä¸­çš„modStuScore()å‡½æ•°
+        cout << "æ˜¯å¦ç»§ç»­ä¿®æ”¹ï¼ˆY(y)ï¼šæ˜¯ï¼ŒN(n)ï¼šå¦ï¼‰" << endl; //å¾ªç¯åˆ¤æ–­
         char a;
         cin >> a;
         if(a == 'Y' || a == 'y') {
@@ -79,13 +79,13 @@ void modStuScore()//¹ÜÀíÔ±ĞŞ¸ÄÑ§Éú³É¼¨º¯Êı
         } else if(a == 'N' || a == 'n') {
             temp = 0;
         } else {
-            cout << "ÊäÈë´íÎó!" << endl;
+            cout << "è¾“å…¥é”™è¯¯!" << endl;
             temp = 1;
         }
     }
 }
 
-void getManageLogin()//¹ÜÀíÔ±µÇÂ¼
+void getManageLogin()//ç®¡ç†å‘˜ç™»å½•
 {
     Manage manage5;
     for(int temp = 1; temp;) {
@@ -93,15 +93,14 @@ void getManageLogin()//¹ÜÀíÔ±µÇÂ¼
         b = manage5.getManage();
         if(b == 1) {
             while(true) {
-                system("cls");//Çå³ıÆÁÄ»ÄÚÈİ
+                system("cls");//æ¸…é™¤å±å¹•å†…å®¹
                 cout << "**********************************" << endl;
-                cout << "*******Ñ§Éú³É¼¨¹ÜÀíÏµÍ³£¨¹ÜÀíÔ±£©" << endl;
-                cout << "*******ÇëÑ¡ÔñÏàÓ¦¹¦ÄÜ£º***********" << endl;
-                cout << "******* 1.Ôö¼ÓÑ§Éú ***************" << endl;
-                cout << "******* 2.É¾³ıÑ§Éú ***************" << endl;
-                cout << "******* 3.ĞŞ¸ÄÑ§Éú³É¼¨ ***********" << endl;
-                cout << "******* 4.ĞŞ¸Ä¹ÜÀíÔ±ĞÅÏ¢ *********" << endl;
-                cout << "******* 5.ÍË³öÏµÍ³ ***************" << endl;
+                cout << "*******å­¦ç”Ÿæˆç»©ç®¡ç†ç³»ç»Ÿï¼ˆç®¡ç†å‘˜ï¼‰" << endl;
+                cout << "*******è¯·é€‰æ‹©ç›¸åº”åŠŸèƒ½ï¼š***********" << endl;
+                cout << "******* 1.å¢åŠ å­¦ç”Ÿ ***************" << endl;
+                cout << "******* 2.åˆ é™¤å­¦ç”Ÿ ***************" << endl;
+                cout << "******* 3.ä¿®æ”¹å­¦ç”Ÿæˆç»© ***********" << endl;
+                cout << "******* 5.é€€å‡ºç³»ç»Ÿ ***************" << endl;
                 int t;
                 cin >> t;
                 switch (t) {
@@ -115,18 +114,15 @@ void getManageLogin()//¹ÜÀíÔ±µÇÂ¼
                         modStuScore();
                         break;
                     case 4:
-                        modManInfo();
-                        break;
-                    case 5:
-                        cout << "¸ĞĞ»ÄúµÄÊ¹ÓÃ£¡" << endl;
+                        cout << "æ„Ÿè°¢æ‚¨çš„ä½¿ç”¨ï¼" << endl;
                         system("pause");
                         display_1();
                     default:
-                        cout << "ÊäÈë´íÎó£¡" << endl;
+                        cout << "è¾“å…¥é”™è¯¯ï¼" << endl;
                 }
             }
-        } else { //µÇÂ¼Ê§°ÜÅĞ¶ÏÊÇ·ñÔÙ´ÎµÇÂ½
-            cout << "ÊÇ·ñ¼ÌĞøµÇÂ½£¨Y(y)£ºÊÇ£¬N(n)£º·ñ£©" << endl; //Ñ­»·ÅĞ¶Ï
+        } else { //ç™»å½•å¤±è´¥åˆ¤æ–­æ˜¯å¦å†æ¬¡ç™»é™†
+            cout << "æ˜¯å¦ç»§ç»­ç™»é™†ï¼ˆY(y)ï¼šæ˜¯ï¼ŒN(n)ï¼šå¦ï¼‰" << endl; //å¾ªç¯åˆ¤æ–­
             char a;
             cin >> a;
             if(a == 'Y' || a == 'y') {
@@ -134,7 +130,7 @@ void getManageLogin()//¹ÜÀíÔ±µÇÂ¼
             } else if(a == 'N' || a == 'n') {
                 temp = 0;
             } else {
-                cout << "ÊäÈë´íÎó!" << endl;
+                cout << "è¾“å…¥é”™è¯¯!" << endl;
                 temp = 1;
             }
         }
@@ -142,12 +138,12 @@ void getManageLogin()//¹ÜÀíÔ±µÇÂ¼
 }
 
 
-void modStuInfo()//Ñ§ÉúĞŞ¸ÄĞÅÏ¢º¯Êı
+void modStuInfo()//å­¦ç”Ÿä¿®æ”¹ä¿¡æ¯å‡½æ•°
 {
-    Student student1;//ÊµÀı»¯¶ÔÏó
-    for (int temp = 1; temp;) { //Ñ­»·ĞŞ¸Ä
+    Student student1;//å®ä¾‹åŒ–å¯¹è±¡
+    for (int temp = 1; temp;) { //å¾ªç¯ä¿®æ”¹
         student1.modStuInfo();//
-        cout << "ÊÇ·ñ¼ÌĞøĞŞ¸Ä£¨Y(y)£ºÊÇ£¬N(n)£º·ñ£©" << endl; //Ñ­»·ÅĞ¶Ï
+        cout << "æ˜¯å¦ç»§ç»­ä¿®æ”¹ï¼ˆY(y)ï¼šæ˜¯ï¼ŒN(n)ï¼šå¦ï¼‰" << endl; //å¾ªç¯åˆ¤æ–­
         char a;
         cin >> a;
         if(a == 'Y' || a == 'y') {
@@ -155,19 +151,19 @@ void modStuInfo()//Ñ§ÉúĞŞ¸ÄĞÅÏ¢º¯Êı
         } else if(a == 'N' || a == 'n') {
             temp = 0;
         } else {
-            cout << "ÊäÈë´íÎó!" << endl;
+            cout << "è¾“å…¥é”™è¯¯!" << endl;
             temp = 1;
         }
     }
 
 }
 
-void getStuScore()//Ñ§Éú³É¼¨²é¿´º¯Êı
+void getStuScore()//å­¦ç”Ÿæˆç»©æŸ¥çœ‹å‡½æ•°
 {
-    Student student2;//ÊµÀı»¯¶ÔÏó
-    for (int temp = 1; temp;) { //Ñ­»·²é¿´
+    Student student2;//å®ä¾‹åŒ–å¯¹è±¡
+    for (int temp = 1; temp;) { //å¾ªç¯æŸ¥çœ‹
         student2.getStuScore();
-        cout << "ÊÇ·ñ¼ÌĞø²é¿´£¨Y(y)£ºÊÇ£¬N(n)£º·ñ£©" << endl; //Ñ­»·ÅĞ¶Ï
+        cout << "æ˜¯å¦ç»§ç»­æŸ¥çœ‹ï¼ˆY(y)ï¼šæ˜¯ï¼ŒN(n)ï¼šå¦ï¼‰" << endl; //å¾ªç¯åˆ¤æ–­
         char a;
         cin >> a;
         if(a == 'Y' || a == 'y') {
@@ -175,7 +171,7 @@ void getStuScore()//Ñ§Éú³É¼¨²é¿´º¯Êı
         } else if(a == 'N' || a == 'n') {
             temp = 0;
         } else {
-            cout << "ÊäÈë´íÎó!" << endl;
+            cout << "è¾“å…¥é”™è¯¯!" << endl;
             temp = 1;
         }
     }
@@ -183,20 +179,20 @@ void getStuScore()//Ñ§Éú³É¼¨²é¿´º¯Êı
 }
 
 
-void getStudentLogin()//Ñ§ÉúµÇÂ¼º¯Êı
+void getStudentLogin()//å­¦ç”Ÿç™»å½•å‡½æ•°
 {
-    Student student3;//ÊµÀı»¯¶ÔÏó
-    for (int temp = 1; temp;) { //Ñ­»·µÇÂ½
+    Student student3;//å®ä¾‹åŒ–å¯¹è±¡
+    for (int temp = 1; temp;) { //å¾ªç¯ç™»é™†
         int a;
         a = student3.getStu();
-        if(a == 1) { //µÇÂ½³É¹¦
+        if(a == 1) { //ç™»é™†æˆåŠŸ
             while(true) {
-                system("cls");//Çå³ıÆÁÄ»ÄÚÈİ
+                system("cls");//æ¸…é™¤å±å¹•å†…å®¹
                 cout << "********************************" << endl;
-                cout << "******* Ñ§Éú³É¼¨¹ÜÀíÏµÍ³£¨Ñ§Éú£©*****" << endl;
-                cout << "******* ÇëÑ¡ÔñÏàÓ¦¹¦ÄÜ£º***********" << endl;
-                cout << "******* 1.²é¿´³É¼¨ **************" << endl;
-                cout << "******* 2.ÍË³öÏµÍ³ ***************" << endl;
+                cout << "******* å­¦ç”Ÿæˆç»©ç®¡ç†ç³»ç»Ÿï¼ˆå­¦ç”Ÿï¼‰*****" << endl;
+                cout << "******* è¯·é€‰æ‹©ç›¸åº”åŠŸèƒ½ï¼š***********" << endl;
+                cout << "******* 1.æŸ¥çœ‹æˆç»© **************" << endl;
+                cout << "******* 2.é€€å‡ºç³»ç»Ÿ ***************" << endl;
                 int t;
                 cin >> t;
                 switch(t) {
@@ -204,15 +200,15 @@ void getStudentLogin()//Ñ§ÉúµÇÂ¼º¯Êı
                         getStuScore();
                         break;
                     case 2:
-                        cout << "¸ĞĞ»ÄúµÄÊ¹ÓÃ£¡" << endl;
+                        cout << "æ„Ÿè°¢æ‚¨çš„ä½¿ç”¨ï¼" << endl;
                         system("pause");
                         display_1();
                     default:
-                        cout << "ÊäÈë´íÎó£¡" << endl; //ÊäÈë´íÎó
+                        cout << "è¾“å…¥é”™è¯¯ï¼" << endl; //è¾“å…¥é”™è¯¯
                 }
             }
         } else {
-            cout << "ÊÇ·ñ¼ÌĞøÊäÈë£¨Y(y)£ºÊÇ£¬N(n)£º·ñ£©" << endl; //Ñ­»·ÅĞ¶Ï
+            cout << "æ˜¯å¦ç»§ç»­è¾“å…¥ï¼ˆY(y)ï¼šæ˜¯ï¼ŒN(n)ï¼šå¦ï¼‰" << endl; //å¾ªç¯åˆ¤æ–­
             char a;
             cin >> a;
             if(a == 'Y' || a == 'y') {
@@ -220,7 +216,7 @@ void getStudentLogin()//Ñ§ÉúµÇÂ¼º¯Êı
             } else if(a == 'N' || a == 'n') {
                 temp = 0;
             } else {
-                cout << "ÊäÈë´íÎó!" << endl;
+                cout << "è¾“å…¥é”™è¯¯!" << endl;
                 temp = 1;
             }
         }
@@ -228,15 +224,15 @@ void getStudentLogin()//Ñ§ÉúµÇÂ¼º¯Êı
 }
 
 
-void display_3()//¹¦ÄÜ²Ëµ¥ÏÔÊ¾º¯Êı£¨Ñ§Éú¶Ë£©
+void display_3()//åŠŸèƒ½èœå•æ˜¾ç¤ºå‡½æ•°ï¼ˆå­¦ç”Ÿç«¯ï¼‰
 {
     while(true) {
-        system("cls");//Çå³ıÆÁÄ»ÄÚÈİ
+        system("cls");//æ¸…é™¤å±å¹•å†…å®¹
         cout << "**********************************" << endl;
-        cout << "»¶Ó­½øÈëÑ§Éú³É¼¨¹ÜÀíÏµÍ³£¡(Ñ§Éú)" << endl;
-        cout << "******* 1.µÇÂ½ÕËºÅ ***************" << endl;
-        cout << "******* 2.ĞŞ¸ÄÑ§ÉúĞÅÏ¢ ***********" << endl;
-        cout << "******* 3.ÍË³öÏµÍ³ ***************" << endl;
+        cout << "æ¬¢è¿è¿›å…¥å­¦ç”Ÿæˆç»©ç®¡ç†ç³»ç»Ÿï¼(å­¦ç”Ÿ)" << endl;
+        cout << "******* 1.ç™»é™†è´¦å· ***************" << endl;
+        cout << "******* 2.ä¿®æ”¹å­¦ç”Ÿä¿¡æ¯ ***********" << endl;
+        cout << "******* 3.é€€å‡ºç³»ç»Ÿ ***************" << endl;
         int t;
         cin >> t;
         switch(t) {
@@ -247,25 +243,25 @@ void display_3()//¹¦ÄÜ²Ëµ¥ÏÔÊ¾º¯Êı£¨Ñ§Éú¶Ë£©
                 modStuInfo();
                 break;
             case 3:
-                cout << "¸ĞĞ»ÄúµÄÊ¹ÓÃ£¡" << endl; //ÍË³ö
+                cout << "æ„Ÿè°¢æ‚¨çš„ä½¿ç”¨ï¼" << endl; //é€€å‡º
                 system("pause");
                 display_1();
             default :
-                cout << "ÊäÈë´íÎó£¡" << endl; //´íÎóÌáÊ¾
+                cout << "è¾“å…¥é”™è¯¯ï¼" << endl; //é”™è¯¯æç¤º
         }
     }
 }
 
 
-void display_2()//¹¦ÄÜ²Ëµ¥ÏÔÊ¾º¯Êı£¨¹ÜÀíÔ±¶Ë£©
+void display_2()//åŠŸèƒ½èœå•æ˜¾ç¤ºå‡½æ•°ï¼ˆç®¡ç†å‘˜ç«¯ï¼‰
 {
     while(true) {
-        system("cls");//Çå³ıÆÁÄ»ÄÚÈİ
+        system("cls");//æ¸…é™¤å±å¹•å†…å®¹
         cout << "**********************************" << endl;
-        cout << "»¶Ó­½øÈëÑ§Éú³É¼¨¹ÜÀíÏµÍ³£¡(¹ÜÀíÔ±)" << endl;
-        cout << "******* 1.µÇÂ½ÕËºÅ ***************" << endl;
-        cout << "******* 2.ĞŞ¸Ä¹ÜÀíÔ±ĞÅÏ¢ *********" << endl;
-        cout << "******* 3.ÍË³öÏµÍ³ ***************" << endl;
+        cout << "æ¬¢è¿è¿›å…¥å­¦ç”Ÿæˆç»©ç®¡ç†ç³»ç»Ÿï¼(ç®¡ç†å‘˜)" << endl;
+        cout << "******* 1.ç™»é™†è´¦å· ***************" << endl;
+        cout << "******* 2.ä¿®æ”¹ç®¡ç†å‘˜ä¿¡æ¯ *********" << endl;
+        cout << "******* 3.é€€å‡ºç³»ç»Ÿ ***************" << endl;
         int t;
         cin >> t;
         switch(t) {
@@ -275,25 +271,25 @@ void display_2()//¹¦ÄÜ²Ëµ¥ÏÔÊ¾º¯Êı£¨¹ÜÀíÔ±¶Ë£©
                 modManInfo();
                 break;
             case 3:
-                cout << "¸ĞĞ»ÄúµÄÊ¹ÓÃ£¡" << endl;
+                cout << "æ„Ÿè°¢æ‚¨çš„ä½¿ç”¨ï¼" << endl;
                 system("pause");
                 display_1();
             default :
-                cout << "ÊäÈë´íÎó£¡" << endl; //ÊäÈë´íÎó
+                cout << "è¾“å…¥é”™è¯¯ï¼" << endl; //è¾“å…¥é”™è¯¯
         }
     }
 }
 
-void display_1()//¹¦ÄÜ²Ëµ¥ÏÔÊ¾º¯Êı
+void display_1()//åŠŸèƒ½èœå•æ˜¾ç¤ºå‡½æ•°
 {
     while(true) {
-        system("cls");//Çå³ıÆÁÄ»ÄÚÈİ
+        system("cls");//æ¸…é™¤å±å¹•å†…å®¹
         cout << "*****************************" << endl;
-        cout << "**** »¶Ó­½øÈëÑ§Éú³É¼¨¹ÜÀíÏµÍ³£¡" << endl;
-        cout << "**** ÇëÑ¡ÔñÒÔºÎÖÖÉí·İµÇÂ¼£¿" << endl;
-        cout << "**** 1.¹ÜÀíÔ± ****" << endl;
-        cout << "**** 2.Ñ§Éú ****" << endl;
-        cout << "**** 3.ÍË³ö ****" << endl;
+        cout << "**** æ¬¢è¿è¿›å…¥å­¦ç”Ÿæˆç»©ç®¡ç†ç³»ç»Ÿï¼" << endl;
+        cout << "**** è¯·é€‰æ‹©ä»¥ä½•ç§èº«ä»½ç™»å½•ï¼Ÿ" << endl;
+        cout << "**** 1.ç®¡ç†å‘˜ ****" << endl;
+        cout << "**** 2.å­¦ç”Ÿ ****" << endl;
+        cout << "**** 3.é€€å‡º ****" << endl;
         int t;
         cin >> t;
         switch(t) {
@@ -304,11 +300,11 @@ void display_1()//¹¦ÄÜ²Ëµ¥ÏÔÊ¾º¯Êı
                 display_3();
                 break;
             case 3:
-                cout << "¸ĞĞ»ÄúµÄÊ¹ÓÃ£¡" << endl; //ÍË³ö
+                cout << "æ„Ÿè°¢æ‚¨çš„ä½¿ç”¨ï¼" << endl; //é€€å‡º
                 system("pause");
                 exit(0);
             default :
-                cout << "ÊäÈë´íÎó£¡" << endl; //´íÎóÌáÊ¾
+                cout << "è¾“å…¥é”™è¯¯ï¼" << endl; //é”™è¯¯æç¤º
         }
     }
 }
