@@ -3,6 +3,8 @@
 #include<iostream>//使用标准输入输出流
 #include<fstream>//文件流
 #include<sstream>//string流
+#include<vector>
+#include<algorithm>
 using namespace std;//std命名空间
 
 class Manage
@@ -16,7 +18,10 @@ public:
     int modManInfo();//修改管理员信息函数
     void addStu();//添加学生函数
     void delStu();//删除学生函数
-    void modStuScore();//录入学生成绩函数
+    void modStuScore();//修改学生成绩函数
+    void saveScore();
+    void sortScore();
+
     ~Manage();//析构函数
 };
 

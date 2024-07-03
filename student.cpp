@@ -2,10 +2,8 @@
 
 Student::Student()
 {
-    this->name = "未命名";
-    this->code = "";
-}
 
+}
 
 int Student::getStu()
 {
@@ -23,13 +21,12 @@ int Student::getStu()
     if(fin.eof()) {
         cout << "打开student.txt失败！" << endl;
     } else {
-        while(!fin) {
+        while(!fin.eof()) {
             string str;
             getline(fin, str); //读入每一行
             istringstream strin(str);//定义strin流
             strin >> na >> nu >> co;
             if((a == na) && b == nu && c == co) {
-                flag = 1;
                 return 1;
                 cout << "你已成功登陆！" << endl;
                 break;
@@ -41,6 +38,7 @@ int Student::getStu()
             fin.close();
         }
     }
+    return 0;
 }
 
 void Student::modStuInfo()
@@ -57,7 +55,7 @@ void Student::modStuInfo()
     ifstream in("C:\\Users\\nie\\Qt\\StudentManagement\\student.txt");//打开文件
     string s1;
     while(getline(in, s1)) { //读入数据
-        istringstream sin(s1);//定义sin1流
+        istringstream sin(s1);//定义sin流
         sin >> a >> b >> c;
         ofstream out("C:\\Users\\nie\\Qt\\StudentManagement\\student1.txt", ios::app); //打开并写入新文件
         if((a == d) && (b == e) && (c == f)) { //判断是否输入正确
@@ -94,7 +92,8 @@ void Student::modStuInfo()
 
 void Student::getStuScore()
 {
-    string s, a, b, c, d;
+    string s;
+    int a, b, c, d;
     cout << "请输入你的姓名：" << endl;
     cin >> s;
     int flag = 0;
@@ -112,6 +111,9 @@ void Student::getStuScore()
                 cout << "已查找到你的成绩！" << endl;
                 cout << "高等数学： " << "大学物理： " << "计算机基础： " << "C语言程序设计： " << endl;
                 cout << "     " << a << "         " << b << "          " << c << "           " << d << endl;
+                if(a >= 90 && b >= 90 && c >= 90 && d >= 90) {
+                    cout << "Good Scores !!! " << endl;
+                }
                 system("pause");
             }
         }
@@ -123,6 +125,57 @@ void Student::getStuScore()
     }
 
 
+}
+
+int Student::getA()
+{
+    return this->a;
+}
+
+int Student::getB()
+{
+    return this->b;
+}
+
+int Student::getC()
+{
+    return this->c;
+}
+
+int Student::getD()
+{
+    return this->d;
+}
+
+void Student::setA(int a)
+{
+    this->a = a;
+}
+
+void Student::setB(int b)
+{
+    this->b = b;
+
+}
+
+void Student::setC(int c)
+{
+    this->c = c;
+}
+
+void Student::setD(int d)
+{
+    this->d = d;
+}
+
+string Student::getName()
+{
+    return this->name;
+}
+
+void Student::setName(string name)
+{
+    this->name = name;
 }
 
 Student::~Student()
