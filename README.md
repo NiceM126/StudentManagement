@@ -1,6 +1,6 @@
 # StudentManagement
 * C++初学者之简易学生成绩管理系统
-  * 就写了两个基本类，manage类和student类，利用std::string类储存数据
+  * 写了两个基本类，manage类和student类，利用string类储存学生与管理员数据
   * 以txt文本写入数据，采用ifstream/ofstream文件流，student.txt储存学生信息，manage.txt储存管理员信息，score.txt储存学生成绩
   * 项目使用Qt 5.12.12构建，后续考虑做个简易图形界面
 # 基本功能
